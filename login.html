@@ -10,14 +10,14 @@
     <meta name="csrf-token" content="lnd0IPPDGjN1AbWVQ9cUGWSB6LOZKPhS5xL6NBel">
     <link rel="shortcut icon" href="./dist/images/icons/favicon.ico" type="image/x-icon">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="./dist/css/owl.carousel.min.css?">
     <link rel="stylesheet" href="./dist/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./dist/css/font/stylesheet.css">
@@ -141,18 +141,18 @@
                         <input class="auth-input mb-40" type="password" name="password" id="password" placeholder="Пароль">
                         <div class="login__btns mb-4">
                             <button class="btn btn_fill" type="submit">Войти</button>
-                            <a href="/register/" class="start__btn btn start__btn-big">Зарегистрироваться</a>
+                            <a href="./register/" class="start__btn btn start__btn-big">Зарегистрироваться</a>
                         </div>
-                        <a class="link-forget" href="/password/reset">Забыли пароль?</a>
+                        <a class="link-forget" href="./password/reset">Забыли пароль?</a>
                     </form>
-                    <a href="/reset/" class="login__reset-link"></a>
+                    <a href="./reset/" class="login__reset-link"></a>
                     <div class="login__alter d-flex">
                         <p class="login__text">Или войдите с помощью:</p>
                         <div class="login__alter-btns d-flex">
-                            <a href="/login/yandex" class="login__alter-btn"><img src="./dist/images/yandex.svg" alt="" class="login__alter-ico"></a>
-                            <a href="/login/vk" class="login__alter-btn"><img src="./dist/images/vk.svg" alt="" class="login__alter-ico"></a>
-                            <a href="/login/mailru" class="login__alter-btn"><img src="./dist/images/mail.svg" alt="" class="login__alter-ico"></a>
-                            <a href="/login/ok" class="login__alter-btn"><img src="./dist/images/ok.svg" alt="" class="login__alter-ico"></a>
+                            <a href="./login/yandex" class="login__alter-btn"><img src="./dist/images/yandex.svg" alt="" class="login__alter-ico"></a>
+                            <a href="./login/vk" class="login__alter-btn"><img src="./dist/images/vk.svg" alt="" class="login__alter-ico"></a>
+                            <a href="./login/mailru" class="login__alter-btn"><img src="./dist/images/mail.svg" alt="" class="login__alter-ico"></a>
+                            <a href="./login/ok" class="login__alter-btn"><img src="./dist/images/ok.svg" alt="" class="login__alter-ico"></a>
                         </div>
                     </div>
                 </div>
@@ -577,7 +577,7 @@
         });
 
         function submitFilter() {
-            location.href = '/challenges?' +
+            location.href = './challenges?' +
                 (filter.type.length > 1 ? `type=${filter.type}` : '')
         }
     </script>
@@ -781,12 +781,12 @@
                     if($(this).val() === '') {
                         thBtn.text('Задонатить')
                     } else {
-                        thBtn.html('Задонатить ' + parseInt($(this).val()).toLocaleString() + ' <img src="/dist/img/deels_cur.svg" class="small_coin">')
+                        thBtn.html('Задонатить ' + parseInt($(this).val()).toLocaleString() + ' <img src="./dist/img/deels_cur.svg" class="small_coin">')
                     }
                     thBtn.text('Задонатить')
                 })
             } else {
-                thBtn.html('Задонатить ' + $(this).val() + ' <img src="/dist/img/deels_cur.svg" class="small_coin">')
+                thBtn.html('Задонатить ' + $(this).val() + ' <img src="./dist/img/deels_cur.svg" class="small_coin">')
                 customCostInput
                     .css('display', 'none')
                     .removeAttr('required')
