@@ -187,6 +187,7 @@
             margin:10000,
             nav:true,
             items: 1,
+            navText: ["<img src='./dist/images/slider-prev.png'>","<img src='./dist/images/slider-next.png'>"],
         });
     });
     </script>
@@ -246,7 +247,10 @@
             position: absolute;
             top: 0;
             right: 0;
-            transform: translateY(-100%);
+            transform: translateY(-120%);
+        }
+        .owl-carousel .owl-nav button.owl-prev{
+            margin-right: 20px;
         }
         .owl-carousel .owl-stage-outer{
             overflow: visible;
@@ -304,6 +308,7 @@
             }
         }
         @media(max-width:575px){
+            
             .slide__logo{
                 display: none;
             }
@@ -317,6 +322,7 @@
                 border:none;
                 width: calc(100vw - 35px);
                 height: 100%;
+                background: none;
             }
             .slide__logo-white{
                 display: initial;
