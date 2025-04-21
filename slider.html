@@ -109,7 +109,7 @@
     <header>
     </header>
     <main>
-        <section class="slider">
+        <section class="slider d-flex">
             <div class="container slider__container">
                 <div class="owl-carousel owl-theme" id="new-slider">
                     <div class="slide slide-1">
@@ -278,13 +278,13 @@
             height: 650px;
             border-radius: 20px;
             overflow: visible;
+            background: linear-gradient(90deg,rgba(129, 105, 252, 1) 0%, rgba(0, 0, 0, 1) 100%);
         }
         .owl-carousel{
             height: 100%;
         }
         .slider{
             height: 100vh;
-            display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
@@ -425,7 +425,6 @@
             background: transparent;
         }
         .login__btn-small{
-            border: solid 2px transparent;
             width: 34%;
         }
         .link-forget{
@@ -433,7 +432,6 @@
         }
         .login__btns{
             margin-bottom: 16px;
-            display: flex;
             justify-content: space-between;
         }
         .login__form{
@@ -452,7 +450,6 @@
             border-radius: 8px;
             width: 54px;
             height: 54px;
-            display: flex;
             align-items: center;
             justify-content: center;
         }

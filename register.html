@@ -132,12 +132,12 @@
                 <div class="login__right">
                     <h2 class="login__title txt-neon-white mb-5">Регистрация</h2>
                     <form action="POST" class="login__form">
-                        <input class="auth-input" type="text" name="username" id="username" placeholder="Ник">
-                        <input class="auth-input" type="tel" name="phone" id="phone" placeholder="Телефон">
-                        <input class="auth-input" type="text" name="email" id="email" placeholder="E-mail">
-                        <input class="auth-input" type="password" name="password" id="password" placeholder="Пароль">
+                        <input class="auth-input mb-2" type="text" name="username" id="username" placeholder="Ник">
+                        <input class="auth-input mb-2" type="tel" name="phone" id="phone" placeholder="Телефон">
+                        <input class="auth-input mb-2" type="text" name="email" id="email" placeholder="E-mail">
+                        <input class="auth-input mb-2" type="password" name="password" id="password" placeholder="Пароль">
                         <input class="auth-input mb-40" type="password" name="password_confirmation" id="password_confirmation" placeholder="Подтвердите пароль">
-                        <div class="login__btns mb-4">
+                        <div class="login__btns d-flex mb-4">
                             <a href="/register/" class="btn btn_fill login__btn-big ">Зарегистрироваться</a>
                             <button class="start__btn btn start__btn-big login__btn-small" type="submit">Войти</button>
                         </div>
@@ -147,10 +147,10 @@
                     <div class="login__alter d-flex">
                         <p class="login__text">Или войдите с помощью:</p>
                         <div class="login__alter-btns d-flex">
-                            <a href="/login/yandex" class="login__alter-btn"><img src="./dist/images/yandex.svg" alt="" class="login__alter-ico"></a>
-                            <a href="/login/vk" class="login__alter-btn"><img src="./dist/images/vk.svg" alt="" class="login__alter-ico"></a>
-                            <a href="/login/mailru" class="login__alter-btn"><img src="./dist/images/mail.svg" alt="" class="login__alter-ico"></a>
-                            <a href="/login/ok" class="login__alter-btn"><img src="./dist/images/ok.svg" alt="" class="login__alter-ico"></a>
+                            <a href="/login/yandex" class="login__alter-btn d-flex"><img src="./dist/images/yandex.svg" alt="" class="login__alter-ico"></a>
+                            <a href="/login/vk" class="login__alter-btn d-flex"><img src="./dist/images/vk.svg" alt="" class="login__alter-ico"></a>
+                            <a href="/login/mailru" class="login__alter-btn d-flex"><img src="./dist/images/mail.svg" alt="" class="login__alter-ico"></a>
+                            <a href="/login/ok" class="login__alter-btn d-flex"><img src="./dist/images/ok.svg" alt="" class="login__alter-ico"></a>
                         </div>
                     </div>
                 </div>
@@ -209,9 +209,6 @@
         .login__text{
             color: white;
         }
-        .mobile-border-bottom{
-            margin-bottom: 5px;
-        }
         .auth-input{
             font-size: 16px;
             padding: 22px 20px;
@@ -226,9 +223,6 @@
         .auth-input::placeholder {
             color: white; 
         }
-        .auth-input{
-            margin-bottom: 10px;
-        }
         .mb-40{
             margin-bottom: 40px;
         }
@@ -242,15 +236,12 @@
             background: transparent;
         }
         .login__btn-small{
-            border: solid 2px transparent;
             width: 34%;
         }
         .link-forget{
             text-decoration: underline;
         }
         .login__btns{
-            margin-bottom: 16px;
-            display: flex;
             justify-content: space-between;
         }
         .login__form{
@@ -269,7 +260,6 @@
             border-radius: 8px;
             width: 54px;
             height: 54px;
-            display: flex;
             align-items: center;
             justify-content: center;
         }
@@ -316,11 +306,25 @@
             }
         }
         @media(max-width: 575px){
+            .header__list{
+                display: block !important;
+                margin-right: 0;
+                font-size: 16px;
+            }
+            .header{
+                padding: 0;
+                height: 60px;
+            }
+            .header__logo img{
+                width: 74px;
+                height: 20px;
+            }
             .login{
                 margin-top: 70px;
             }
             .login__right{
                 min-width: initial;
+                margin-top: 0;
             }
             .login__title{
                 text-align: center;
@@ -373,7 +377,6 @@
                 bottom: 0;
                 width: 100%;
                 border-radius: 0;
-                display: flex;
                 align-items:center;
                 padding: 17px 40px 0 23px;
 

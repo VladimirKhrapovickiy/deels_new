@@ -38,13 +38,13 @@ body {
 /*}*/
 
 body {
-	background-image: url("../../dist/images/background.webp");
+	background-image: url("../../dist/images/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 @media (max-width: 480px) {
 	body {
-		background-image: url("../..//dist/images/background-xs.webp");
+		background-image: url("../..//dist/images/background-xs.png");
 	}
 }
 .background.fix {
