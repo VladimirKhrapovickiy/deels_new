@@ -305,6 +305,57 @@
         .owl-theme .owl-nav [class*=owl-]:hover{
             background: none;
         }
+        @media(max-height:940px){
+            main{
+                height: 100vh;
+            }
+            .slider {
+                padding-top: 150px;
+            }
+            .slide-1 .slide__left img{
+                max-height: 800px;
+            }
+            .slide-5 .slide__left img{
+                max-height: 800px;
+                left: -145px;
+            }
+        }
+        @media(max-height:970px){
+            #new-slider .slide{
+                height: 600px;
+            }
+            .slide__title{
+                padding-top: 40px;
+            }
+            .slide-1 .slide__left img {
+                max-height: 750px;
+            }
+            .slide-3 .slide__left img {
+                max-height: 850px;
+            }
+            .slide-5 .slide__left img {
+                max-height: 700px;
+                left: -125px;
+            }
+        }
+        @media(max-height:820px){
+            .slider {
+                padding-top: 110px;
+            }
+            .slide-2 .slide__left img {
+                bottom: -104px;
+                max-height: 830px;
+            }
+        }
+        @media(max-height:780px){
+            .slider {
+                padding-top: 75px;
+            }
+            .slide-1 .slide__left img {
+                max-height: 680px;
+            }
+        }
+
         @media(max-width:1100px){
             .slide__left{
                 display: none;

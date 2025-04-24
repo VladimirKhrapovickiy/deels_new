@@ -166,7 +166,7 @@
     </main>
     <style>
         .login{
-            margin-top: 94px;
+            margin-top: 60px;
         }
         .header{
             justify-content: space-between;
@@ -293,6 +293,53 @@
             font-size: 30px;
             max-width: 193px;
         }
+        main{
+            margin: auto;
+        }
+        @media(max-height:1040px){
+            .login{
+                margin-top: 20px;
+            }
+            .login__container{
+                margin-bottom: 0;
+            }
+        }
+        @media(max-height:970px){
+            .login__form{
+                margin-bottom: 16px;
+            }
+            .login__left{
+                max-height: 600px;
+            }
+            .popup-try{
+                bottom: 200px;
+            }
+            
+        }
+        @media(max-height:950px){
+            .advantages__list{
+                margin-bottom: 0;
+            }
+            .popup-try {
+                bottom: 80px;
+                padding: 16px 24px 0 12px;
+                justify-content: center;
+            }
+            .popup-try__text {
+                font-size: 24px;
+                max-width: 150px;
+            }
+            .advantages__item{
+                font-size: 32px;
+            }
+            .advantages__item:last-child {
+                font-size: 24px;
+
+            }
+            .auth-input{
+                padding: 16px 20px;
+            }
+        }
         @media(max-width: 767px){
             .login__container{
                 flex-direction: column-reverse;
@@ -302,6 +349,25 @@
                 max-width: 40%;
                 margin: 0 auto;
                 display: block;
+            }
+            .advantages{
+                display: none;
+            }
+                        .popup-try{
+                bottom: 0;
+                width: 100%;
+                border-radius: 0;
+                align-items:center;
+                padding: 17px 40px 0 23px;
+
+            }
+            .popup-try__img{
+                width: 110px;
+            }
+            .popup-try__text{
+                max-width: 100%;
+                font-size: 20px;
+                text-align: center;
             }
         }
         @media(max-width: 575px){
@@ -318,16 +384,23 @@
                 width: 74px;
                 height: 20px;
             }
+            .login__container{
+                gap: 0;
+            }
             .login{
-                margin-top: 70px;
+                margin-top: 50px;
             }
             .login__right{
                 min-width: initial;
                 margin-top: 0;
             }
+            .login__left img {
+                margin-bottom: 45px;
+            }
             .login__title{
                 text-align: center;
                 font-size: 32px;
+                margin-bottom: 6px;
             }
             .login__text{
                 text-align: center;
@@ -338,13 +411,14 @@
                 border-bottom: 1px solid #00F0FF;
                 padding: 5px 0;
                 display: inline-block;
+                width: 280px;
             }
             .mobile-border-bottom:last-child{
                 margin-bottom: 12px;
             }
             .mobile-border-bottom .text-accent{
                 width: 100%;
-                display: block;
+                white-space: nowrap;
             }
             .mb-40{
                 margin-bottom: 20px;
@@ -359,6 +433,7 @@
             .link-forget{
                 display: block;
                 text-align: center;
+                font-size: 12px;
             }
             .login__form{
                 margin-bottom: 12px;
@@ -368,26 +443,16 @@
             }
             .login__alter-btns{
                 justify-content: center;
+                width: 44px;
+                height: 44px;
+            }
+            .auth-input {
+                padding: 12px 20px;
             }
             .advantages{
                 display: none;
             }
-            .popup-try{
-                bottom: 0;
-                width: 100%;
-                border-radius: 0;
-                align-items:center;
-                padding: 17px 40px 0 23px;
-
-            }
-            .popup-try__img{
-                width: 110px;
-            }
-            .popup-try__text{
-                max-width: 100%;
-                font-size: 20px;
-                text-align: center;
-            }
+           
         }
         @media(min-width:575px){
             .login__text .text-accent{
